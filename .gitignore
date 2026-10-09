@@ -1,0 +1,17 @@
+# Compiled BDL modules and forms (regenerate with `make`)
+*.42m
+*.42f
+*.42r
+
+# Test run output and shell recordings made while developing
+results/
+*.log
+
+# fglpkg install directory and build output
+.fglpkg/
+*.zip
+
+# Local AI / editor files
+.claude/
+.mcp.json
+CLAUDE.md

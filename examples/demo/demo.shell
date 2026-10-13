@@ -1,0 +1,42 @@
+# demo.shell — drive the demo contacts application from fgltest-shell.
+#
+#   make test     (or, from the project root:)
+#   fglrun com/fourjs/fgltest/shell/fgltest_shell --script examples/demo/demo.shell \
+#       --save results/demo.actions.json --workdir examples/demo demo
+#
+# Lines that look (window, fields, actions, tables) are not recorded; each test
+# step that succeeds is, and --save writes them as an fgltest action file.
+
+window
+fields
+actions
+tables
+
+test "lists the contacts"
+assertFormName contacts
+assertRowCount contacts 3
+assertCellAtRow contacts name 2 "Grace Hopper"
+assertActionActive append
+
+test "adds a contact"
+action append
+assertWindowName w_contact
+fields
+fill formonly.c_name "Katherine Johnson"
+fill formonly.c_city Hampton
+action accept
+assertWindowName screen
+assertRowCount contacts 4
+assertCellAtRow contacts name 4 "Katherine Johnson"
+assertCellAtRow contacts city 4 Hampton
+
+test "a contact needs a name"
+action append
+fill formonly.c_city Nowhere
+action accept
+assertWindowName w_contact
+action cancel
+assertRowCount contacts 4
+
+test "exits"
+action cancel

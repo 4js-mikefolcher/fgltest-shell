@@ -1,0 +1,15 @@
+# contact — the demo's "new contact" window.
+LAYOUT(TEXT = "New contact")
+GRID
+{
+  Name   [c_name                    ]
+  City   [c_city                    ]
+  Phone  [c_phone                   ]
+}
+END
+
+ATTRIBUTES
+EDIT c_name = FORMONLY.c_name, COMMENT = "Required";
+EDIT c_city = FORMONLY.c_city;
+EDIT c_phone = FORMONLY.c_phone;
+END

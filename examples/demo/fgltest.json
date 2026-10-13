@@ -1,0 +1,13 @@
+{
+  "reporters": "console,junit",
+  "outdir": "../../results",
+  "suites": [
+    {
+      "name": "demo-replay",
+      "actions": "../../results/demo.actions.json",
+      "mode": "tcp",
+      "workdir": ".",
+      "commandLine": "fglrun demo"
+    }
+  ]
+}

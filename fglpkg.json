@@ -1,0 +1,34 @@
+{
+  "$schema": "https://fglpkg.io/schema/v1/fglpkg.schema.json",
+  "name": "4js-fgltest-shell",
+  "version": "0.1.0",
+  "description": "Interactive command-line test shell for Genero BDL apps — start a program under GGC, list its fields and actions, fill fields, trigger actions and check results, and save the session as an fgltest action file. Scriptable, with JSON output for other tools.",
+  "author": "Michael Folcher <michael.folcher@4js.com>",
+  "license": "Apache-2.0",
+  "repository": "https://github.com/4js-mikefolcher/fgltest-shell",
+  "keywords": [
+    "testing",
+    "functional-tests",
+    "ggc",
+    "repl",
+    "cli",
+    "fgltest",
+    "genero"
+  ],
+  "genero": "^5.1.0 || ^6.0.0",
+  "dependencies": {
+    "fgl": {
+      "4js-fgltest": "^1.1.2"
+    }
+  },
+  "root": "com/fourjs/fgltest/shell",
+  "docs": [
+    "README.md",
+    "USERGUIDE.md",
+    "CHANGELOG.md"
+  ],
+  "programs": [
+    "fgltest_shell",
+    "fgltest_session"
+  ]
+}

@@ -1,0 +1,54 @@
+{
+  "lockfileVersion": 1,
+  "generatedAt": "2026-10-13T01:13:26Z",
+  "generoVersion": "6.00.01",
+  "root": {
+    "name": "4js-fgltest-shell",
+    "version": "0.1.0",
+    "declared": {
+      "dependencies": {
+        "fgl": {
+          "4js-fgltest": "^1.1.2"
+        }
+      },
+      "devDependencies": {},
+      "optionalDependencies": {}
+    }
+  },
+  "packages": [
+    {
+      "name": "4js-fgltest",
+      "version": "1.1.2",
+      "downloadUrl": "https://service.generointelligence.ai/registry/packages/4js-fgltest/versions/1.1.2/artifacts/genero6",
+      "checksum": "13e7644a19a7e41fe402a0f51a6c5e1bb91b3306bdf0ef99f46d5482b9bca71b",
+      "generoMajor": "6",
+      "requiredBy": [
+        "<root>"
+      ],
+      "generoPackages": [
+        "com.fourjs.fgltest"
+      ],
+      "materialized": [
+        "com/fourjs/fgltest/cli.42m",
+        "com/fourjs/fgltest/core.42m",
+        "com/fourjs/fgltest/driver.42m",
+        "com/fourjs/fgltest/expect.42m",
+        "com/fourjs/fgltest/fgltest.42m",
+        "com/fourjs/fgltest/fgltest_json.42m",
+        "com/fourjs/fgltest/flow.42m",
+        "com/fourjs/fgltest/ggcdriver.42m",
+        "com/fourjs/fgltest/inspect.42m",
+        "com/fourjs/fgltest/reporters.42m",
+        "com/fourjs/fgltest/runner.42m",
+        "com/fourjs/fgltest/script.42m",
+        "com/fourjs/fgltest/server.42m"
+      ],
+      "size": 82193,
+      "uploadedAt": "2026-10-12T15:18:53.284Z",
+      "uploader": "partner:a69745237238d6e6977664fb536b37e3",
+      "signature": "XBLd+37RaFPDwQzuCYsDlyCaVDS+rItnRn3f/GELW9AridEYYKf7WYhOydc0ke3SkFimhDQZhFVyqRzrIMnwDg==",
+      "signatureKeyid": "prod-key-1"
+    }
+  ],
+  "jars": []
+}

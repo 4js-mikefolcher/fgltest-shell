@@ -1,0 +1,20 @@
+# contacts — the demo's main window: a list of contacts.
+LAYOUT(TEXT = "Contacts")
+GRID
+{
+ <T t_contacts                                  >
+   Name                    City
+  [name                   |city                ]
+ <                                              >
+}
+END
+
+ATTRIBUTES
+TABLE t_contacts: contacts, HEIGHT = 6;
+EDIT name = FORMONLY.name, COMMENT = "Name";
+EDIT city = FORMONLY.city, COMMENT = "City";
+END
+
+INSTRUCTIONS
+SCREEN RECORD sr_contacts(FORMONLY.name, FORMONLY.city)
+END
